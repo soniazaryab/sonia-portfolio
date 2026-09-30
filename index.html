@@ -1,0 +1,625 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sonia Zaryab.">
+  <meta name="author" content="Sonia Zaryab">
+
+  <title>Sonia Zaryab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="bg-fx">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow--one"></div>
+    <div class="bg-glow bg-glow--two"></div>
+    <canvas id="particles"></canvas>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>Sonia<span class="nav__logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#certifications" class="nav__link">Certifications</a>
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="nav__burger" id="navBurger" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="hero__content">
+
+        <div class="hero__eyebrow">
+          <span class="dot-blink"></span>
+          United Arab Emirates
+        </div>
+
+        <h1 class="hero__title">
+          Hi, I'm <span class="gradient-text">Sonia Zaryab</span>
+        </h1>
+
+        <h2 class="hero__typing-line">
+          <span id="typingText"></span><span class="cursor">|</span>
+        </h2>
+
+        <p class="hero__desc">
+          I'm Sonia, a second-year Cybersecurity student currently strengthening my skills through home labs and certifications. Alongside cybersecurity, I'm also a digital marketer with an interest in graphic design, where I'm continuing to build my creative skills and expand my portfolio.
+        </p>
+
+        <div class="hero__buttons">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#about" class="btn btn--ghost">About Me</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="3">0</span>
+            <span class="hero__stat-label">Projects & Builds</span>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section__header">
+        <span class="section__eyebrow">01/ABOUT</span>
+        <h2 class="section__title">A little about me</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__visual reveal">
+          <div class="about__initials">
+            <span>S</span>
+          </div>
+          <div class="about__visual-ring"></div>
+        </div>
+
+        <div class="about__text reveal">
+          <p>
+            I'm Sonia, a second-year Cybersecurity student, currently balancing university while building my career in digital marketing and developing my skills to become a Cloud Security Engineer in the future.
+          </p>
+
+          <p>
+            Cybersecurity and digital marketing have been two passions of mine for as long as I can remember. For cybersecurity, I want to understand how technology can be attacked and protected, as well as improved. On the flip side of tech, I want to learn and contribute towards marketing digitally and growing myself and other businesses. Ultimately, my main goal is to help people and companies, by protecting them and growing them at the same time.
+          </p>
+
+
+        <div class="about__interests">
+          <span class="chip">Cloud Security</span>
+          <span class="chip">Cybersecurity</span>
+          <span class="chip">Digital Marketing</span>
+          <span class="chip">Graphic Design</span>
+          <span class="chip">Cloud Computing</span>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="skills">
+      <div class="section__header">
+        <span class="section__eyebrow">02/SKILLS</span>
+        <h2 class="section__title">What I work with</h2>
+      </div>
+
+      <div class="skills__grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">⌨</div>
+          <h3 class="skill-card__title">Programming</h3>
+          <ul class="skill-card__list">
+            <li>
+              <span>JavaScript</span>
+              <div class="bar"><div class="bar__fill" style="--level:75%"></div></div>
+            </li>
+            <li>
+              <span>Python</span>
+              <div class="bar"><div class="bar__fill" style="--level:80%"></div></div>
+            </li>
+            <li>
+              <span>HTML/CSS</span>
+              <div class="bar"><div class="bar__fill" style="--level:60%"></div></div>
+            </li>
+          </ul>
+        </div>
+
+                <div class="skill-card reveal">
+          <div class="skill-card__icon">⌕</div>
+          <h3 class="skill-card__title">Cybersecurity</h3>
+
+          <ul class="skill-card__list">
+            <li>
+              <span>Networking</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:65%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>Linux</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:60%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>Ethical Hacking</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:55%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>Security Labs / CTFs</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:55%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">⚙</div>
+          <h3 class="skill-card__title">Development</h3>
+
+          <ul class="skill-card__list">
+            <li>
+              <span>Git / GitHub</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:75%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>VS Code</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:80%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>Front-End Development</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:70%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>APIs</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:55%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+            <section class="section" id="projects">
+          <div class="section__header">
+            <span class="section__eyebrow">03/PROJECTS</span>
+            <h2 class="section__title">Things I've built</h2>
+          </div>
+
+          <div class="projects__grid">
+
+            <article class="project-card reveal">
+              <div class="project-card__glow"></div>
+
+              <div class="project-card__top">
+                <span class="project-card__tag">Cybersecurity</span>
+              </div>
+
+              <h3 class="project-card__title">
+                Windows Server Active Directory Homelab
+              </h3>
+
+              <p class="project-card__desc">
+                A virtualized Active Directory homelab built to strengthen my practical
+                cybersecurity and Windows Server administration skills. The lab simulates
+                an enterprise-style domain environment with user management, Group Policy,
+                DNS, file sharing, permissions and domain authentication.
+              </p>
+
+              <div class="project-card__stack">
+                <span>Windows Server</span>
+                <span>Active Directory</span>
+                <span>VMware</span>
+                <span>PowerShell</span>
+              </div>
+
+              <div class="project-card__links">
+                <a
+                  href="https://github.com/soniazaryab/windows-server-ad-homelab"
+                  target="_blank"
+                  rel="noopener"
+                  class="link-btn"
+                >
+                  GitHub →
+                </a>
+              </div>
+            </article>
+
+
+            <article class="project-card reveal">
+              <div class="project-card__glow"></div>
+
+              <div class="project-card__top">
+                <span class="project-card__tag">Web Development</span>
+              </div>
+
+              <h3 class="project-card__title">
+                Personal Portfolio Website
+              </h3>
+
+              <p class="project-card__desc">
+                A personal portfolio website designed and developed to showcase my
+                cybersecurity projects, technical skills, digital marketing experience
+                and creative work. Built with a responsive layout, interactive animations
+                and dark and light themes.
+              </p>
+
+              <div class="project-card__stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-card__links">
+                <a href="#" class="link-btn">
+                  GitHub →
+                </a>
+
+                <a href="#" class="link-btn">
+                  Live Site — Coming Soon
+                </a>
+              </div>
+            </article>
+
+
+                    <article class="project-card reveal">
+          <div class="project-card__glow"></div>
+
+          <div class="project-card__top">
+            <span class="project-card__tag">Designathon</span>
+          </div>
+
+          <h3 class="project-card__title">
+            Circl Designathon Website
+          </h3>
+
+          <p class="project-card__desc">
+            A website created as part of a designathon project, combining web design,
+            branding and front-end development to create a clean and engaging digital
+            experience.
+          </p>
+
+          <div class="project-card__stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>UI/UX</span>
+          </div>
+
+          <div class="project-card__links">
+            <a
+              href="https://github.com/soniazaryab/circl-designathon"
+              target="_blank"
+              rel="noopener"
+              class="link-btn"
+            >
+              GitHub →
+            </a>
+
+            <a
+              href="https://soniazaryab.github.io/circl-designathon/"
+              target="_blank"
+              rel="noopener"
+              class="link-btn"
+            >
+              Live Site →
+            </a>
+          </div>
+        </article>
+          </div>
+        </section>
+<section class="section section--alt" id="experience">
+  <div class="section__header">
+    <span class="section__eyebrow">04/EXPERIENCE</span>
+    <h2 class="section__title">My journey so far</h2>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline__item reveal">
+      <div class="timeline__dot"></div>
+      <div class="timeline__card">
+        <span class="timeline__date">April 2024 – April 2025</span>
+        <h3 class="timeline__title">Grade 12 CBSE — Commerce Stream</h3>
+        <p class="timeline__desc">
+          Completed Grade 12 under the CBSE curriculum with a final score of 94%
+          in the Commerce stream. Received a CBSE Topper Award in recognition of
+          strong academic performance.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline__item reveal">
+      <div class="timeline__dot"></div>
+      <div class="timeline__card">
+        <span class="timeline__date">May 2025 – January 2026</span>
+        <h3 class="timeline__title">Administrative Assistant</h3>
+        <p class="timeline__desc">
+          Supported day-to-day administrative operations, including document
+          management, record keeping, scheduling, data entry, email communication
+          and general office coordination.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline__item reveal">
+      <div class="timeline__dot"></div>
+      <div class="timeline__card">
+        <span class="timeline__date">September 2025 – Present</span>
+        <h3 class="timeline__title">Cybersecurity Student</h3>
+        <p class="timeline__desc">
+          Currently in my second year of university studying Cybersecurity,
+          while continuing to strengthen my practical skills through homelabs,
+          independent learning and industry certifications. I am particularly
+          focused on areas such as cloud security, networking and system
+          administration.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline__item reveal">
+      <div class="timeline__dot"></div>
+      <div class="timeline__card">
+        <span class="timeline__date">January 2026 – Present</span>
+        <h3 class="timeline__title">IT & Digital Marketing Associate</h3>
+        <p class="timeline__desc">
+          Supporting both IT operations and digital marketing activities.
+          IT responsibilities include Active Directory user and group management,
+          account provisioning, password resets, access permissions, basic
+          troubleshooting and supporting day-to-day system administration tasks.
+          On the marketing side, I manage Meta and Google advertising campaigns,
+          helping generate approximately 25% more leads while reducing campaign
+          costs by around 50%.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <section class="section" id="certifications">
+      <div class="section__header">
+        <span class="section__eyebrow">05/CERTIFICATIONS</span>
+        <h2 class="section__title">Certifications</h2>
+      </div>
+
+      <div class="certs__grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-card__badge">+</div>
+          <h3 class="cert-card__title">Security+</h3>
+          <p class="cert-card__issuer">CompTIA</p>
+          <span class="cert-card__status">COMPLETED</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-card__badge">☁</div>
+          <h3 class="cert-card__title">Windows Server Hybrid Administrator Associate</h3>
+          <p class="cert-card__issuer">Microsoft</p>
+          <span class="cert-card__status">COMPLETED</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-card__badge">◈</div>
+          <h3 class="cert-card__title">CCNA</h3>
+          <p class="cert-card__issuer">Cisco</p>
+          <span class="cert-card__status">IN PROGRESS</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-card__badge">☁</div>
+          <h3 class="cert-card__title">Certified in Cybersecurity (CC)</h3>
+          <p class="cert-card__issuer">ISC2</p>
+          <span class="cert-card__status">COMPLETED
+      </div>
+    </section>
+
+    <section class="section section--alt" id="portfolio">
+  <div class="section__header">
+    <span class="section__eyebrow">06/PORTFOLIO</span>
+    <h2 class="section__title">My Design Portfolio</h2>
+  </div>
+
+  <div class="portfolio__grid">
+
+    <div class="portfolio-card reveal">
+      <span class="portfolio-card__type">Design Portfolio</span>
+
+      <h3 class="portfolio-card__title">
+        Coming Soon
+      </h3>
+
+      <p class="portfolio-card__desc">
+        I'm currently building my design portfolio. Check back soon to see my latest creative work and projects.
+      </p>
+
+      <span class="portfolio-card__status">
+        In Progress
+      </span>
+    </div>
+
+  </div>
+</section>
+
+    <section class="section" id="contact">
+      <div class="section__header">
+        <span class="section__eyebrow">07/CONTACT</span>
+        <h2 class="section__title">Let's connect</h2>
+      </div>
+
+      <div class="contact__grid">
+
+        <div class="contact__info reveal">
+          <p class="contact__intro">
+            Interested in cybersecurity, digital marketing, or graphic design?
+            Feel free to reach out.
+          </p>
+
+          <a href="mailto:YOUR_EMAIL@example.com" class="contact__item">
+            <span class="contact__icon">✉</span>
+            <span>soniazaryab26@gmail.com</span>
+          </a>
+
+          <a href="https://github.com/soniazaryab" target="_blank" rel="noopener" class="contact__item">
+            <span class="contact__icon">⌘</span>
+            <span>https://github.com/soniazaryab</span>
+          </a>
+
+          <a href="https://linkedin.com/in/soniazaryab" target="_blank" rel="noopener" class="contact__item">
+            <span class="contact__icon">in</span>
+            <span>https://linkedin.com/in/soniazaryab</span>
+          </a>
+        </div>
+
+        <form
+  class="contact__form reveal"
+  id="contactForm"
+  action="https://formspree.io/f/mzezownv"
+  method="POST"
+>
+
+  <div class="form-group">
+    <label for="name">Name</label>
+
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      placeholder="Your name"
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      placeholder="you@example.com"
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+
+    <textarea
+      id="message"
+      name="message"
+      rows="5"
+      required
+      placeholder="What's on your mind?"
+    ></textarea>
+  </div>
+
+  <input
+    type="hidden"
+    name="_subject"
+    value="New Portfolio Contact Message"
+  >
+
+  <button
+    type="submit"
+    class="btn btn--primary btn--full"
+  >
+    Send Message
+  </button>
+
+  <p
+    class="form-status"
+    id="formStatus"
+  ></p>
+
+</form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>
+        © <span id="year"></span> Sonia Zaryab
+      </span>
+
+      <div class="footer__socials">
+        <a href="https://github.com/soniazaryab" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/soniazaryab" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
